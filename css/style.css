@@ -640,6 +640,9 @@ header .links .logo,
         margin: 0;
 
     }
+    .about .div_text h2 span{
+        
+    }
 }
   
   /* Pour les mobiles (≤ 480px) */
@@ -671,7 +674,26 @@ header .links .logo,
     .icons a{
         font-size: 20px;
     }
-    
+    .hero{
+        width: 95%;
+        height: fit-content;
+        margin-bottom: 0;
+    }
+    .hero .div_Text{
+        padding-left: 10px;
+    }
+    .hero .div_Text h1{
+        font-size: 40px;
+    }
+    .hero .div_Text h2{
+        font-size: 27px;
+    }
+    .btns{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
     
 }
 
