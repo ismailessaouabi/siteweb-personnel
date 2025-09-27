@@ -602,7 +602,7 @@ header .links .logo,
 .icon_menu{
     display: none;
 }
-/* Pour les tablettes (≤ 768px) */
+/* Pour les tablettes (≤ 1080px) */
 @media (max-width: 835px) {
     .links_parent{
         width: 90%;
