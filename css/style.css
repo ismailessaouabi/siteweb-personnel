@@ -633,7 +633,6 @@ header .links .logo,
         margin: 0;
         width: 100%;
         flex-direction: column;
-        background: #be8686;
     }
     .links_parent{
         width: 100%;
