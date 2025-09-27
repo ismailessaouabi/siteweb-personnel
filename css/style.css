@@ -646,7 +646,7 @@ header .links .logo,
 }
   
   /* Pour les mobiles (≤ 480px) */
-@media (max-width: 580px) {
+@media (max-width: 780px) {
     header .container{
         display: flex;
         padding-top: 10px;
