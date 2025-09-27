@@ -173,27 +173,37 @@ header nav{
     align-items: center;
     height: 100%;
 }
-header nav .logo img{
-    width: 200px;
+.links_parent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
 }
-header nav .links{
+header nav .logo {
+    color: var(--main_color);
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.links{
     display: flex;
     gap: 40px;
 }
-header nav .links a{
+.links a{
     color: var(--white_color);
     text-transform: capitalize;
     font-size: 18px;
     transition: 0.3s ;
 }
-header nav .links a:hover{
+.links a:hover{
     color: var(--main_color);
 }
-header nav .icons{
+nav .icons{
     display: flex;
     gap: 30px;
 }
-header nav .icons a{
+nav .icons a{
     color: var(--main_color);
     font-size: 28px;
     transition: 0.3s;
@@ -593,12 +603,33 @@ header .links .logo,
 .icon_menu{
     display: none;
 }
-
-
-
-
-
-
+/* Pour les tablettes (≤ 768px) */
+@media (max-width: 835px) {
+    .links_parent{
+        width: 90%;
+    }
+    .links{
+        padding-left: 20px;
+        width: 50%;
+        gap: 15px;
+    }
+    .links a{
+    
+        font-size: 20px;
+    }
+    .icons{
+        padding-left: 10px;
+        gap: 20px;
+    }
+    .icons a{
+        font-size: 24px;
+    }
+}
+  
+  /* Pour les mobiles (≤ 480px) */
+@media (max-width: 480px) {
+    
+}
 
 
 
