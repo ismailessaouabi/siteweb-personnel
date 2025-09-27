@@ -25,7 +25,6 @@ body{
 .container{
     width: 80%;
     margin: auto;
-    max-width: 1500px;
 }
 
 section{
@@ -628,6 +627,35 @@ header .links .logo,
   
   /* Pour les mobiles (≤ 480px) */
 @media (max-width: 480px) {
+    header .container{
+        display: flex;
+        padding-top: 10px;
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        background: #be8686;
+    }
+    .links_parent{
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .links{
+        overflow-x: scroll;
+        width: 80%;
+    }
+    .links a{
+        font-size: 16px;
+    }
+    .icons{
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 1px;
+    }
+    .icons a{
+        font-size: 20px;
+    }
+    
     
 }
 
