@@ -275,7 +275,6 @@ header nav .icons a:hover{
 /* Start Skills Section */
 .skills{
     width: 100%;
-    background: #cc9f9f70;
 }
 
 .skills .top_section h2 {
@@ -342,7 +341,6 @@ header nav .icons a:hover{
 /* start about */
 .about{
     width: 100%;
-    background: #a6e27570;
 }
 
 .about .container{
@@ -400,17 +398,26 @@ header nav .icons a:hover{
 
 
 /* Start Services */ 
+.services {
+    width: 100%;
+    padding: 0;
+}
+.services .container{
+    width: 95%;
+}
 
 .services .boxs{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .services .boxs .box{
-    width: 30%;
-    text-align: center;
-    padding: 50px 20px;
+    width: 300px;
+    padding:  20px;
     border: 1px solid var(--border-color);
     border-radius: 10px;
     transition: 0.3s ease-in-out;
