@@ -218,7 +218,7 @@ header nav .icons a:hover{
 
 .hero{
     padding-top: 100px;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,6 +273,10 @@ header nav .icons a:hover{
     z-index: -1;
 }
 /* Start Skills Section */
+.skills{
+    width: 100%;
+    background: #cc9f9f70;
+}
 
 .skills .top_section h2 {
     padding-top: 60px;
@@ -336,6 +340,10 @@ header nav .icons a:hover{
 
 
 /* start about */
+.about{
+    width: 100%;
+    background: #a6e27570;
+}
 
 .about .container{
     background: var(--black_color);
@@ -603,7 +611,7 @@ header .links .logo,
     display: none;
 }
 /* Pour les tablettes (≤ 1080px) */
-@media (max-width: 835px) {
+@media (max-width: 1080px) {
     .links_parent{
         width: 90%;
     }
@@ -640,8 +648,17 @@ header .links .logo,
         margin: 0;
 
     }
+    .about .container{
+        width: 95%;
+    }
+    .about .div_text{
+        width: 60%;
+    }
+    .about .div_img{
+        width: 35%;
+    }
     .about .div_text h2 span{
-        
+        font-size: 25px;
     }
 }
   
@@ -693,6 +710,41 @@ header .links .logo,
         display: flex;
         justify-content: space-between;
         padding: 0 20px;
+    }
+    
+    .about .container{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10px;
+        margin: 5px;
+        gap: 0px;
+        height: fit-content;
+    }
+    .about .div_text h2 span{
+        width: 100%;
+        font-size: 20px;
+        padding: 0;
+    }
+    .about .div_text h4{
+        font-size: 25px;
+    }
+    .about .div_text{
+        width: 100%;
+        margin: 0;
+        padding: 0 ;
+        padding-bottom: 20px;
+        height: fit-content;
+    }
+    .about .div_img{
+        width: 80%;
+    }
+    .about .container h4{
+        font-size: 20px;
+    }
+    .about .div_text ul li{
+        width: 50%;
+        font-size: 14px;
+        margin-bottom: 15px;
     }
     
 }
