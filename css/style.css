@@ -452,7 +452,12 @@ header nav .icons a:hover{
 
 /* Start projects */ 
 
-
+.projects{
+    width: 100%;
+}
+.projects .container{
+    width: 95%;
+}
 .projects .project_box{
     display: flex;
     align-items: center;
@@ -463,8 +468,7 @@ header nav .icons a:hover{
     width: 45%;
 }
 .projects .project_box .text{
-    margin-left: 100px;
-    width: calc(50% - 100px);
+    width: 53%;
 }
 .projects .project_box .text h4{
     font-size: 20px;
@@ -667,6 +671,11 @@ header .links .logo,
     .about .div_text h2 span{
         font-size: 25px;
     }
+    .project_box .pro_links{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
 }
   
   /* Pour les mobiles (≤ 480px) */
@@ -752,6 +761,15 @@ header .links .logo,
         width: 50%;
         font-size: 14px;
         margin-bottom: 15px;
+    }
+    .project_box{
+        padding: 0;
+    }
+    .project_box .text{
+        width: 100%;
+    }
+    .project_box .text h3 a{
+        font-size: 30px;
     }
     
 }
