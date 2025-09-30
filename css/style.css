@@ -309,6 +309,11 @@ header nav .icons a:hover{
     margin-bottom: 20px;
     transition: 0.3s;
 }
+.skill-card .sv {
+    width: 95px;
+    color: var(--main_color);
+    transition: 0.3s;
+}
 
 .skill-card h3 {
     font-size: 22px;
