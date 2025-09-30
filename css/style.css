@@ -217,13 +217,12 @@ header nav .icons a:hover{
 /* start hero */ 
 
 .hero{
-    padding-top: 100px;
+    padding-top: 90px;
     height: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
-    padding-bottom: 50px;
 }
 
 .hero .container{
@@ -232,18 +231,18 @@ header nav .icons a:hover{
     align-items: center;
 }
 .hero .div_Text{
-    width: 50%;
+    width: 70%;
 }
 .hero .div_Text h4{
     color: var(--p_color);
-    font-size: 35px;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 .hero .div_Text h1{
-    font-size: 50px;
+    font-size: 40px;
 }
 .hero .div_Text h2{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: normal;
     line-height: 0.9;
 }
@@ -255,12 +254,12 @@ header nav .icons a:hover{
 }
 .hero .btn{
     font-size: 20px;
-    padding: 18px 50px;
+    padding: 10px 30px;
 }
 
 
 .hero .div_img{
-    width: 37%;
+    width: 30%;
     position: relative;
     border-radius: 0 0 600px 600px;
 
@@ -278,7 +277,7 @@ header nav .icons a:hover{
 }
 
 .skills .top_section h2 {
-    padding-top: 60px;
+    padding-top: 10px;
     font-size: 30px;
     margin-bottom: 10px;
 }
