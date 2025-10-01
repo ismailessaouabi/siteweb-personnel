@@ -459,6 +459,7 @@ header nav .icons a:hover{
 .projects{
     width: 100%;
     height: fit-content;
+    padding: 0 80px;
 }
 .projects .container{
     width: 95%;
@@ -471,6 +472,9 @@ header nav .icons a:hover{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
+    border: #c9f31d solid 1px;
+    border-radius: 2px;
+    padding: 10px;
 }
 .projects .project_box img{
     width: 45%;
@@ -482,9 +486,10 @@ header nav .icons a:hover{
     font-size: 40px;
     margin-bottom: 20px;
     font-weight: normal;
+    font-weight: 700;
 }
 .projects .project_box .text h3 a{
-    font-size: 40px;
+    font-size: 30px;
     color: var(--white_color);
     transition: 0.5s;
 }
