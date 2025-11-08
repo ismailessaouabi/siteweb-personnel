@@ -471,8 +471,8 @@ header nav .icons a:hover{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
     gap: 20px;
+    padding: 20px;
 }
 .projects .project_box{
     width: 23%;
