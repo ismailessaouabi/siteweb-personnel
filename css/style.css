@@ -520,18 +520,14 @@ header nav .icons a:hover{
 .projects .project_box .text .pro_links{
     display: flex;
     align-items: center;
-    justify-content: end;
+    justify-content: center;
     color: white;
-    gap: 10px;
+    
 }
-.project_box.project_box_2 .text .pro_links{
-    justify-content: start;
 
-}
 
 .projects .project_box .text .link{
     display: block;
-    
     border: 1px solid var(--border-color);
     color: var(--black_color);
     font-size: 20px;
@@ -539,6 +535,7 @@ header nav .icons a:hover{
     text-align: center;
     border-radius: 8px;
     padding: 9px;
+    width: 100%;
     transition: 0.3s ease-in-out;
 }
 .projects .project_box .text .link:hover{
@@ -844,15 +841,15 @@ header .links .logo,
         flex-direction: column;
         gap: 20px;
         width: 30%;
-        height: 270px;
+        height: 470px;
+
     }
     .projects .project_box img{
         width: 100%;
         margin: auto;
     }
     .projects .project_box .text{
-        width: 90%;
-        margin: auto;
+        width: 100%;
     }
     
     
@@ -862,24 +859,22 @@ header .links .logo,
         flex-direction: column;
     }
    .projects .container .project_box .text h3 a {
-        font-size: 20px;
+        font-size: 10px;
     }
     .projects .project_box .text h4{
-        font-size: 20px;
+        font-size: 10px;
     }
     .project_box .text p{
         font-size: 14px;
     }
     .project_box .text .pro_links{
-        gap: 10px;
-        padding: 10px;
+        gap: 5px;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        padding: 5px 10px;
     }
-    .project_box .text .link{
-        width: 40px;
-        height: 40px;
-        font-size: 16px;
-        line-height: 40px;
-    }
+    
 
 
 
@@ -985,7 +980,19 @@ header .links .logo,
         font-size: 40px;
         margin-bottom: 15px;
 }
+.projects .project_box{
+    width: 100%;
+    height: fit-content;
 
 }
+.projects h3 .text a{
+    font-size: 26px;
+}
+.projects .project_box .text p{
+    height: fit-content;
+    font-size: large;
+}
+}
+/* End Responsive */
 
 
