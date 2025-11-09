@@ -272,6 +272,7 @@ header nav .icons a:hover{
 }
 /* Start Skills Section */
 .skills{
+    padding: 60px 0;
     width: 100%;
 }
 
@@ -970,7 +971,12 @@ header .links .logo,
     .about .div_text ul li{
         width: 100%;
     }
-    
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
+        gap: 10px;
+    }
+
     
 }
 
