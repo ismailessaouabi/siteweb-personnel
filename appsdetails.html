@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Project Details - AuraConnect</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1337ec",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101322",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark font-display">
+    <div class="relative flex min-h-screen w-full flex-col">
+        <main class="flex-grow">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+                <!-- Breadcrumbs -->
+                <div class="mb-6 px-4">
+                    <nav aria-label="Breadcrumb" class="flex">
+                        <ol class="inline-flex items-center space-x-1 md:space-x-2 rtl:space-x-reverse">
+                            <li class="inline-flex items-center">
+                                <a class="inline-flex items-center text-sm font-medium text-gray-500 dark:text-gray-400 hover:text-primary dark:hover:text-white transition-colors"
+                                    href="#">
+                                    <span class="material-symbols-outlined mr-2 !text-xl">home</span>
+                                    Projects
+                                </a>
+                            </li>
+                            <li>
+                                <div class="flex items-center">
+                                    <span class="material-symbols-outlined !text-xl text-gray-400">chevron_right</span>
+                                    <span
+                                        class="ms-1 text-sm font-medium text-gray-700 dark:text-gray-200 md:ms-2">AuraConnect</span>
+                                </div>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <!-- Header Image -->
+                <div class="mb-4">
+                    <div class="w-full bg-center bg-no-repeat bg-cover flex flex-col justify-end overflow-hidden rounded-xl min-h-[320px] md:min-h-[480px]"
+                        data-alt="Screenshot of the AuraConnect application dashboard showing user analytics and charts."
+                        style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAqdaF1GDFtrqWqTsICepgYlZrDh0Ij9BtcL_Qa9Kms79Cy57jOMsZIxS5Wyt-WJ_kmbIEoNAn8QZ5zsj-TTUPzC6ityNuyo6pvxBklncnIRcIyzosiY6kQZ1q5d4vu816K3PPbtkTyJFS-gTcZWoCFSPVDRTWH6NpFoRX2Rljkv6PDZTX2wUMwlQ7eQjWlAvng8-9AEiU4ULO4p09RpUa6A8JHcZc2NhJXNCOyqSlFaSyOg_3n_1dmSd2-OCQP3JjKFUEncjLhnxA9");'>
+                    </div>
+                </div>
+                <!-- Sticky Action Bar -->
+                <div
+                    class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md py-4 mb-8 -mx-4 px-4 border-b border-gray-200 dark:border-gray-800">
+                    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div class="flex flex-col text-center sm:text-left">
+                            <p class="text-2xl font-bold leading-tight tracking-tight text-gray-900 dark:text-white">
+                                AuraConnect</p>
+                            <p class="text-sm text-gray-500 dark:text-gray-400">Real-time collaboration and analytics
+                                platform</p>
+                        </div>
+                        <div class="flex flex-shrink-0 gap-3 w-full sm:w-auto">
+                            <button
+                                class="flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors">
+                                <span class="material-symbols-outlined mr-2">visibility</span>
+                                <span class="truncate">View Live Demo</span>
+                            </button>
+                            <button
+                                class="flex w-full sm:w-auto min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-300 dark:hover:bg-gray-700 transition-colors">
+                                <span class="material-symbols-outlined mr-2">code</span>
+                                <span class="truncate">Source Code</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Two-Column Layout -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 lg:gap-12">
+                    <!-- Left Column (Wider) -->
+                    <div class="lg:col-span-2 space-y-10">
+                        <!-- Project Overview -->
+                        <section>
+                            <div class="flex flex-col gap-3 p-4">
+                                <h1
+                                    class="text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em] text-gray-900 dark:text-white">
+                                    Real-Time Analytics Dashboard</h1>
+                                <p class="text-base font-normal leading-relaxed text-gray-600 dark:text-gray-400">
+                                    AuraConnect is a full-stack web application designed to solve the problem of
+                                    fragmented team communication and project tracking. The core purpose is to provide a
+                                    unified platform where teams can collaborate in real-time, visualize data through an
+                                    interactive dashboard, and manage tasks efficiently. This project's main goal was to
+                                    build a secure, scalable, and intuitive tool that enhances productivity and provides
+                                    clear insights into project progress.
+                                </p>
+                            </div>
+                        </section>
+                        <!-- Key Features -->
+                        <section>
+                            <h2
+                                class="text-gray-900 dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4">
+                                Key Features</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4">
+                                <div class="bg-gray-100 dark:bg-gray-800/50 p-6 rounded-xl">
+                                    <div class="flex items-center gap-4">
+                                        <div class="bg-primary/20 text-primary p-3 rounded-lg"><span
+                                                class="material-symbols-outlined">groups</span></div>
+                                        <h3 class="text-lg font-bold text-gray-900 dark:text-white">Real-time
+                                            Collaboration</h3>
+                                    </div>
+                                    <p class="mt-2 text-gray-600 dark:text-gray-400">Users can communicate and edit
+                                        documents simultaneously, with changes reflected instantly across all sessions.
+                                    </p>
+                                </div>
+                                <div class="bg-gray-100 dark:bg-gray-800/50 p-6 rounded-xl">
+                                    <div class="flex items-center gap-4">
+                                        <div class="bg-primary/20 text-primary p-3 rounded-lg"><span
+                                                class="material-symbols-outlined">lock</span></div>
+                                        <h3 class="text-lg font-bold text-gray-900 dark:text-white">Secure User
+                                            Authentication</h3>
+                                    </div>
+                                    <p class="mt-2 text-gray-600 dark:text-gray-400">Robust JWT-based authentication
+                                        system to ensure data privacy and secure access for all users.</p>
+                                </div>
+                                <div class="bg-gray-100 dark:bg-gray-800/50 p-6 rounded-xl">
+                                    <div class="flex items-center gap-4">
+                                        <div class="bg-primary/20 text-primary p-3 rounded-lg"><span
+                                                class="material-symbols-outlined">monitoring</span></div>
+                                        <h3 class="text-lg font-bold text-gray-900 dark:text-white">Data Visualization
+                                        </h3>
+                                    </div>
+                                    <p class="mt-2 text-gray-600 dark:text-gray-400">Interactive charts and graphs
+                                        provide at-a-glance insights into project metrics and user activity.</p>
+                                </div>
+                                <div class="bg-gray-100 dark:bg-gray-800/50 p-6 rounded-xl">
+                                    <div class="flex items-center gap-4">
+                                        <div class="bg-primary/20 text-primary p-3 rounded-lg"><span
+                                                class="material-symbols-outlined">task_alt</span></div>
+                                        <h3 class="text-lg font-bold text-gray-900 dark:text-white">Dynamic Task
+                                            Management</h3>
+                                    </div>
+                                    <p class="mt-2 text-gray-600 dark:text-gray-400">A flexible Kanban-style board for
+                                        creating, assigning, and tracking project tasks from start to finish.</p>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- Image Gallery -->
+                        <section>
+                            <h2
+                                class="text-gray-900 dark:text-white text-2xl font-bold leading-tight tracking-[-0.015em] px-4 pb-4">
+                                Gallery</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 px-4">
+                                <img class="rounded-lg object-cover w-full h-full aspect-video"
+                                    data-alt="Application dashboard view"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHve7jXTavEgh3oMaMqfGggT0cp5Tu8ChXRYwyg5IIpddh-Lbka7r8vDFE8es2uCb0sF-4zbqct26Qer-Uta9iPxQIKMRBcLTm5alBbO7jjm-INLcY2TZuPELqYt9HUVMuzQ12wzKKx7jo0GRzk9C-4c4wFkkQixBUzbt-XLgufce09p7Ubd6faLEBsoGA2sd299MLalCZehvL4RzVOZ15qeVrKBq17zwKdL8Dtu5wTKu8QvkxEiq_r70oOnoGkKLi7X-7rJlmFYyj" />
+                                <img class="rounded-lg object-cover w-full h-full aspect-video"
+                                    data-alt="User profile and settings page"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPpP2KRT2_R-0c_m1g2KXDomUsgor6Tuye_LeyAuJdL1gXw5T3E27D6M8Kefehul-LFlxln32lYF4vWfESf3lU2eCOZ8eP9o5XPVMrVweyOyyrHFspOVzJJY3mNt7p49P_bat65Xy290YfYGOVoS9Yv2DoITTW7X7SaUv0E9E7-rhq-zAOURe3k6mt9FWYJWFQWC-TLiDSKaidDZ9OpN-gJMXUkEZs-2PYCHQxgb8ijLREYhYRHjcyNvvuo868KitdCEKgT0QuMaNM" />
+                            </div>
+                        </section>
+                    </div>
+                    <!-- Right Column (Narrower) -->
+                    <div class="lg:col-span-1 mt-10 lg:mt-0">
+                        <div
+                            class="sticky top-28 bg-gray-100 dark:bg-gray-900/50 p-6 rounded-xl border border-gray-200 dark:border-gray-800">
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Project Details</h3>
+                            <div class="space-y-4">
+                                <div>
+                                    <h4 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">My Role</h4>
+                                    <p class="text-gray-800 dark:text-gray-200">Lead Full-Stack Developer</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">Timeline
+                                    </h4>
+                                    <p class="text-gray-800 dark:text-gray-200">Jan 2023 - Apr 2023</p>
+                                </div>
+                            </div>
+                            <div class="w-full h-px bg-gray-200 dark:bg-gray-700 my-6"></div>
+                            <h3 class="text-lg font-bold text-gray-900 dark:text-white mb-4">Technologies Used</h3>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">React</span>
+                                <span
+                                    class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Node.js</span>
+                                <span
+                                    class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Express</span>
+                                <span
+                                    class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">PostgreSQL</span>
+                                <span
+                                    class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Socket.IO</span>
+                                <span
+                                    class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Tailwind
+                                    CSS</span>
+                                <span
+                                    class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Docker</span>
+                                <span
+                                    class="bg-primary/20 text-primary text-sm font-medium px-3 py-1 rounded-full">Vite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
