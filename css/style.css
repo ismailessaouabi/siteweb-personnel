@@ -8,6 +8,9 @@
     list-style-type: none;
     font-family: "Inter",sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 :root{
     --main_color:#c9f31d;
@@ -272,7 +275,7 @@ header nav .icons a:hover{
 }
 /* Start Skills Section */
 .skills{
-    padding: 60px 0;
+    padding: 100px 0;
     width: 100%;
 }
 
@@ -345,6 +348,7 @@ header nav .icons a:hover{
 /* start about */
 .about{
     width: 100%;
+    padding-top: 100px;
 }
 
 .about .container{
@@ -460,7 +464,7 @@ header nav .icons a:hover{
     width: 100%;
     height: fit-content;
     padding: 0px;
-    margin: 0;
+    padding-top: 120px;
 }
 .projects .container{
     width: 100%;
@@ -552,6 +556,10 @@ header nav .icons a:hover{
 
 
 /* Start  contact */ 
+.contact{
+    width: 100%;
+    padding: 120px 0;
+}
 
 .contact .container{
     display: flex;
@@ -667,7 +675,7 @@ header .links .logo,
     }
     .links{
         padding-left: 20px;
-        width: 50%;
+        width: 70%;
         gap: 15px;
     }
     .links a{
@@ -871,7 +879,7 @@ header .links .logo,
         gap: 5px;
         display: flex;
         justify-content: center;
-        width: 50%;
+        width: 100%;
         padding: 5px 10px;
     }
     
@@ -929,6 +937,26 @@ header .links .logo,
 }
 
 @media (max-width: 425px) {
+    .links_parent{
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+    .links{
+        width: 100%;
+        gap: 10px;
+    }
+    .links a{
+        font-size: 14px;
+    }
+    .propos {
+        display: none;
+    }
+    nav .icons{
+        gap: 3px;
+    }
+    nav .icons a{
+        font-size: 25px;
+    }
     .hero .container{
         flex-direction: column-reverse;
         align-items: center;
@@ -992,7 +1020,25 @@ header .links .logo,
     height: fit-content;
     font-size: large;
 }
+
+.contact .container{
+    padding: 10px;
+}
+.contact .soial_contact{
+    width: 100%;
+    padding: 0;
+}
+.contact  .soial_contact .links a{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.contact .soial_contact .links a i{
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
 }
 /* End Responsive */
 
 
+}
