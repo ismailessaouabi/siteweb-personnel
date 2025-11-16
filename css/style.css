@@ -490,6 +490,7 @@ header nav .icons a:hover{
     border-radius: 2px;
     padding: 0px;
     min-height:300px;
+    gap : 1px;
 }
 .projects .project_box img{
     width: 100%;
@@ -729,6 +730,10 @@ header .links .logo,
     
     
 }
+
+
+
+
   
   /* Pour les mobiles (≤ 480px) */
 @media (max-width: 768px) {
@@ -936,6 +941,10 @@ header .links .logo,
     
 }
 
+
+
+
+
 @media (max-width: 425px) {
     .links_parent{
         width: 100%;
@@ -1017,8 +1026,12 @@ header .links .logo,
     font-size: 26px;
 }
 .projects .project_box .text p{
-    height: fit-content;
-    font-size: large;
+    margin: 30px 0 50px;
+    line-height: 1.8;
+    white-space: wrap;         /* pas de retour à la ligne */
+    overflow: hidden;            /* cache le texte qui dépasse */
+    text-overflow: ellipsis;     /* affiche "..." à la fin */
+    height: 50px;
 }
 
 .contact .container{
